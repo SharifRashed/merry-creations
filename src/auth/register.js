@@ -28,7 +28,7 @@ export const Register = (props) => {
                         .then(res => res.json())
                         .then(createdUser => {
                             if (createdUser.hasOwnProperty("id")) {
-                                localStorage.setItem("honey_customer", createdUser.id)
+                                localStorage.setItem("merry_customer", createdUser.id)
                                 history.push("/")
                             }
                         })
@@ -54,7 +54,7 @@ export const Register = (props) => {
             </dialog>
 
             <form className="form--login form__register" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Honey Rae Repairs</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Please Register for Merry Creations</h1>
                 <fieldset>
                     <label htmlFor="name"> Full Name </label>
                     <input onChange={updateCustomer}

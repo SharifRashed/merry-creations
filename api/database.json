@@ -1,0 +1,112 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Dion Stoade",
+            "email": "dstoade0@cornell.edu",
+            "artist":true,
+            "specialty": "painting"
+        },
+        {
+            "id": 2,
+            "name": "Windy Thorneloe",
+            "email": "wthorneloe1@usa.gov",
+            "artist": true,
+            "specialty":"carpentry"
+        },
+        {
+            "id": 3,
+            "name": "Hillie Phillpotts",
+            "email": "hphillpotts2@rakuten.co.jp",
+            "artist": true,
+            "specialty": "scultper"
+        },
+        {
+            "id": 4,
+            "name": "Jobye Danielou",
+            "email": "jdanielou3@apple.com",
+            "artist": false,
+            "specialty": ""
+        },
+        {
+            "id": 5,
+            "name": "Gabbie Schult",
+            "email": "gschult4@tinyurl.com",
+            "artist": false,
+            "specialty":""
+        },
+        {
+            "id": 6,
+            "name": "Vasily Youdell",
+            "email": "vyoudell5@globo.com",
+            "artist":false,
+            "specialty":""
+        },
+        {
+            "id": 7,
+            "name": "Debra Blackhurst",
+            "email": "dblackhurst6@last.fm",
+            "artist":false,
+            "specialty":""
+        },
+        {
+            "id": 8,
+            "name": "Helenelizabeth Passfield",
+            "email": "hpassfield7@netvibes.com",
+            "artist":false,
+            "specialty":""
+        },
+        {
+            "id": 9,
+            "name": "Franchot Slator",
+            "email": "fslator8@51.la",
+            "artist":false,
+            "specialty":""
+        },
+        {
+            "id": 10,
+            "name": "Renaud Erbe",
+            "email": "rerbe9@psu.edu",
+            "artist":false,
+            "specialty":""
+        }
+    ],
+    "portfolio": [
+        {
+            "id": 1,
+            "artistUSerId": 1,
+            "description": "",
+            "img":""
+        },
+        {
+            "id": 2,
+            "artistUSerId": 2,
+            "description": "",
+            "img": ""
+        }
+    ],
+    "commisionRequest": [
+        {
+            "id": 1,
+            "buyerUserId": 1,
+            "artistUserId": 1,
+            "acceptedRequest": "",
+            "completedRequest": "",
+            "description":"",
+            "price": "",
+            "status":""
+            
+        },
+        {
+            "id": 2,
+            "buyerUserId": 2,
+            "artistUserId": 2,
+            "acceptedRequest": "",
+            "completedRequest": "",
+            "description":"",
+            "price": "",
+            "status":""
+            
+        }
+    ]
+}

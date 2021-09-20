@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react"
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom"
-import "./Login.css"
+import "./login.css"
 
 export const Login = () => {
     const [email, set] = useState("")
@@ -9,7 +9,7 @@ export const Login = () => {
     const history = useHistory()
 
     const existingUserCheck = () => {
-        return fetch(`http://localhost:8088/customers?email=${email}`)
+        return fetch(`http://localhost:8088/users?email=${email}`)
             .then(res => res.json())
             .then(user => user.length ? user[0] : false)
     }

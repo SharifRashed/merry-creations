@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react"
 
 export const CommisionRequest = () => {
-    const [commision, updateRequest] = useState([])
-
+    const [commisions, updateRequest] = useState([])
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/commisionRequest?_expand=users&_expand=portfolio")
+            fetch("http://localhost:8088/commisionRequest?_expand=user")
                 .then(res => res.json())
                 .then((data) => {
                     updateRequest(data)
@@ -19,12 +18,12 @@ export const CommisionRequest = () => {
         <>
 
             {
-                requests.map(
-                    (request) => {
-                        console.log(request)
-                        return <div key={`request--${request.id}`}>
-                            <p>{request.description} submitted by {request.customer.name}
-                                and worked on by {request?.employee?.name ? request?.employee?.name : "unknown employee"}</p>
+                commisions.map(
+                    (commision) => {
+                        console.log(commision)
+                        return <div key={`commision--${commision.id}`}>
+                            <p>{commision.description} submitted by {commision.artistUserId}
+                            </p>
                         </div>
                     }
                 )

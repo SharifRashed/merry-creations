@@ -74,12 +74,14 @@
     "portfolio": [
         {
             "id": 1,
+            "name": "Dion Stoade",
             "userId": 1,
             "description": "the next van gogh"
             
         },
         {
             "id": 2,
+            "name": "Windy Thorneloe",
             "userId": 2,
             "description": "new artist"
             
@@ -88,22 +90,22 @@
     "commisionRequest": [
         {
             "id": 1,
-            "buyerUserId": 1,
+            "userId": 1,
             "artistUserId": 1,
             "acceptedRequest": "",
             "completedRequest": "",
-            "description":"",
+            "description":"I want a mural of my cat, Bosco in a lion costume",
             "price": "",
             "status":""
             
         },
         {
             "id": 2,
-            "buyerUserId": 2,
+            "userId": 2,
             "artistUserId": 2,
             "acceptedRequest": "",
             "completedRequest": "",
-            "description":"",
+            "description":"I need a desk made out of maple wood in a tradional style",
             "price": "",
             "status":""
             

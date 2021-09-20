@@ -74,15 +74,15 @@
     "portfolio": [
         {
             "id": 1,
-            "artistUSerId": 1,
-            "description": "",
-            "img":""
+            "userId": 1,
+            "description": "the next van gogh"
+            
         },
         {
             "id": 2,
-            "artistUSerId": 2,
-            "description": "",
-            "img": ""
+            "userId": 2,
+            "description": "new artist"
+            
         }
     ],
     "commisionRequest": [

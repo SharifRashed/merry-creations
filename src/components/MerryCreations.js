@@ -11,7 +11,7 @@ export const MerryCreations = () => {
         <>
             <Route
                 render={() => {
-                    if (localStorage.getItem("honey_customer")) {
+                    if (localStorage.getItem("merry_user")) {
                         return (
                             <>
                                 <NavBar />

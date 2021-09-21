@@ -92,10 +92,10 @@
             "id": 1,
             "userId": 1,
             "artistUserId": 1,
-            "acceptedRequest": "true",
+            "acceptedRequest": true,
             "completedRequest": "",
             "description":"I want a mural of my cat, Bosco in a lion costume",
-            "price": "400.00",
+            "price": 100.00,
             "status":"incomplete"
             
         },
@@ -103,10 +103,21 @@
             "id": 2,
             "userId": 2,
             "artistUserId": 2,
-            "acceptedRequest": "true",
+            "acceptedRequest": true,
             "completedRequest": "",
             "description":"I need a desk made out of maple wood in a tradional style",
-            "price": "100.00",
+            "price": 25.00,
+            "status":"in progress"
+            
+        },
+        {
+            "id": 3,
+            "userId": 3,
+            "artistUserId": 3,
+            "acceptedRequest": true,
+            "completedRequest": true,
+            "description":"I would like a sculpture of my wife made of marble, 16th century",
+            "price": 50.00,
             "status":"in progress"
             
         }

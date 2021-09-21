@@ -23,7 +23,7 @@ export const CommisionRequest = () => {
                         console.log(commision)
                         return <div key={`commision--${commision.id}`}>
                             <p>{commision.description} submitted by {commision.user?.name}
-                                {commision.user?.name} charges an hourly rate of {commision.price}
+                                , charges an hourly rate of {commision.price?.name}
                             </p>
                         </div>
                     }

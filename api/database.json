@@ -92,22 +92,22 @@
             "id": 1,
             "userId": 1,
             "artistUserId": 1,
-            "acceptedRequest": "",
+            "acceptedRequest": "true",
             "completedRequest": "",
             "description":"I want a mural of my cat, Bosco in a lion costume",
-            "price": "",
-            "status":""
+            "price": "400.00",
+            "status":"incomplete"
             
         },
         {
             "id": 2,
             "userId": 2,
             "artistUserId": 2,
-            "acceptedRequest": "",
+            "acceptedRequest": "true",
             "completedRequest": "",
             "description":"I need a desk made out of maple wood in a tradional style",
-            "price": "",
-            "status":""
+            "price": "100.00",
+            "status":"in progress"
             
         }
     ]

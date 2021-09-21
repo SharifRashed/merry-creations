@@ -2,6 +2,7 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { Portfolio } from "./portfolio/portfolio"
 import { CommisionRequest } from "./commision-request/commisionRequest"
+import { RequestForm } from "./commision-request/requestForm"
 
 
 export const ApplicationViews = () => {
@@ -22,7 +23,7 @@ export const ApplicationViews = () => {
 
             <>
                 <Route exact path="/commissionRequest/create">
-                    <CommisionRequest />
+                    <RequestForm />
                 </Route>
             </>
 

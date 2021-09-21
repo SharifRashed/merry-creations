@@ -133,6 +133,16 @@
       "description": "Hey Sharif, I would like a painting of my dog dressed up a Micheal Jackson",
       "price": 450,
       "status": "in progress"
+    },
+    {
+      "description": "Wall painted ",
+      "price": "100",
+      "userId": 4,
+      "artistUserId": 1,
+      "status": "",
+      "acceptedRequest": true,
+      "completedRequest": false,
+      "id": 4
     }
   ]
 }

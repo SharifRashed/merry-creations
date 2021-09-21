@@ -1,11 +1,11 @@
 import React, { useState } from "react"
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 
 
 export const RequestForm = () => {
     const [commission, updateForm] = useState({
         description: "",
-        price: number
+        price: 0
     });
 
     const history = useHistory()
@@ -13,27 +13,30 @@ export const RequestForm = () => {
     const submitRequest = (evt) => {
         evt.preventDefault()
 
-        const newRequest =
+        const newRequest = {
             description: commission.description,
             price: commission.price,
             userId: parseInt(localStorage.getItem("merry_user")),
-                artistUserId: 1,
-                    dateCompleted: ""
+            artistUserId: 1,
+            status: "",
+            acceptedRequest: true,
+            completedRequest: false
+
+        }
+
+        const fetchOption = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newRequest)
+        }
+
+        return fetch("http://localhost:8088/commisionRequests", fetchOption)
+            .then(response => response.json())
+            .then(() => history.push("/commissions"))
+
     }
-
-    const fetchOption = {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(newRequest)
-    }
-
-    return fetch("https://localhost:8088/commissionRequest", fetchOption)
-        .then(response => {
-            history.push("/commissions")
-
-        })
     return (
         <>
             <form className="requestForm">
@@ -66,11 +69,10 @@ export const RequestForm = () => {
                     </div>
                 </fieldset>
 
-                <button onClick={submitRequest}"btn btn-primary" onClick={saveRequest}>
-                Submit Commission
-            </button>
-
-        </form>
+                <button onClick={submitRequest} className="btn btn-primary" >
+                    Submit Commission Request
+                </button>
+            </form>
         </>
     )
 }

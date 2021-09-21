@@ -77,7 +77,7 @@
       "id": 11
     }
   ],
-  "portfolio": [
+  "portfolios": [
     {
       "id": 1,
       "name": "Dion Stoade",
@@ -103,15 +103,15 @@
       "description": "Will paint your dog for cash"
     }
   ],
-  "commisionRequest": [
+  "commisionRequests": [
     {
       "id": 1,
       "userId": 7,
       "artistUserId": 1,
       "acceptedRequest": true,
-      "completedRequest": "",
+      "completedRequest": false,
       "description": "I want a mural of my cat, Bosco in a lion costume",
-      "price": 100,
+      "price": 750,
       "status": "incomplete"
     },
     {
@@ -119,9 +119,9 @@
       "userId": 5,
       "artistUserId": 2,
       "acceptedRequest": true,
-      "completedRequest": "",
+      "completedRequest": false,
       "description": "I need a desk made out of maple wood in a tradional style",
-      "price": 25,
+      "price": 250,
       "status": "in progress"
     },
     {
@@ -131,7 +131,7 @@
       "acceptedRequest": true,
       "completedRequest": true,
       "description": "Hey Sharif, I would like a painting of my dog dressed up a Micheal Jackson",
-      "price": 50,
+      "price": 450,
       "status": "in progress"
     }
   ]

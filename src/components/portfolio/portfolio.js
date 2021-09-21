@@ -7,7 +7,8 @@ export const Portfolio = () => {
     const handleInitialRender = () => {
 
         console.log("Initial useEffect")
-        fetch("http://localhost:8088/portfolio?_expand=user")
+
+        return fetch("http://localhost:8088/portfolios?_expand=user")
             .then(res => res.json())
             .then((portfolioArray) => {
                 changePortfolio(portfolioArray)

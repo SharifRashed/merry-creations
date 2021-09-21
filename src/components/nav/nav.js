@@ -12,7 +12,7 @@ export const NavBar = (props) => {
                 <Link className="navbar__link" to="/portfolio">Portfolios</Link>
             </li>
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/commissionRequest">Commission Requests</Link>
+                <Link className="navbar__link" to="/commissionRequest/create">Commission Requests</Link>
             </li>
 
         </ul>

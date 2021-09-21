@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react"
+import { useHistory } from "react-router"
+
 
 export const CommisionRequest = () => {
     const [commisions, updateRequest] = useState([])
 
+    const history = useHistory()
+
+
     useEffect(
         () => {
-            fetch("http://localhost:8088/commisionRequest?_expand=user&_expand=price")
+            fetch("http://localhost:8088/commisionRequests?_expand=user&_expand=price")
                 .then(res => res.json())
                 .then((data) => {
                     updateRequest(data)
@@ -29,6 +34,10 @@ export const CommisionRequest = () => {
                     }
                 )
             }
+            < div >
+                <button onClick={() => history.push("/commissionRequest/create")}>Create Commission Request</button>
+            </div >
         </>
     )
 }
+

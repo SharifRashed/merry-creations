@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 
-export const users = () => {
+export const Users = () => {
     const [users, modifyUsers] = useState([])
     const [totalUserMessage, updateMessage] = useState("")
 

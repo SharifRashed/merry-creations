@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useHistory } from "react-router"
+import { Link } from 'react-router-dom';
+
 
 
 export const CommisionRequest = () => {
@@ -25,9 +27,10 @@ export const CommisionRequest = () => {
             {
                 commisions.map(
                     (commision) => {
-                        console.log(commision)
                         return <div key={`commision--${commision.id}`}>
-                            <p>{commision.description} submitted by {commision.user?.name}
+                            <p>
+                                <Link to={`/commision/${commision.id}`}>{commision.description}</Link>
+                                submitted by {commision.user?.name}
                                 , charges an hourly rate of {commision.price?.name}
                             </p>
                         </div>

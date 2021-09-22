@@ -143,6 +143,16 @@
       "acceptedRequest": true,
       "completedRequest": false,
       "id": 4
+    },
+    {
+      "description": "I want a painted roof",
+      "price": "100",
+      "userId": 4,
+      "artistUserId": 1,
+      "status": "",
+      "acceptedRequest": true,
+      "completedRequest": false,
+      "id": 5
     }
   ]
 }

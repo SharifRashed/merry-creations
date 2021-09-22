@@ -5,7 +5,8 @@ import { useHistory } from "react-router-dom";
 export const RequestForm = () => {
     const [commission, updateForm] = useState({
         description: "",
-        price: 0
+        price: 0,
+        status: "",
     });
 
     const history = useHistory()
@@ -64,6 +65,16 @@ export const RequestForm = () => {
                             onChange={(evt) => {
                                 const copy = { ...commission }
                                 copy.price = evt.target.value
+                                updateForm(copy)
+                            }} />
+                        <input
+                            required autoFocus
+                            type="string"
+                            className="form-control"
+                            placeholder="Current status for commision"
+                            onChange={(evt) => {
+                                const copy = { ...commission }
+                                copy.status = evt.target.value
                                 updateForm(copy)
                             }} />
                     </div>

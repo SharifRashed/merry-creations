@@ -5,15 +5,18 @@ import { MerryCreations } from './components/MerryCreations';
 //import './index.css';
 import reportWebVitals from './reportWebVitals';
 
+const rootElement = document.getElementById('root')
 
+const reactBaseTemplate = (<React.StrictMode>
+  <BrowserRouter>
+    <MerryCreations />
+  </BrowserRouter>
+</React.StrictMode>);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <MerryCreations />
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+  reactBaseTemplate,
+
+  rootElement
 );
 
 reportWebVitals();

@@ -31,7 +31,7 @@ export const CommisionRequest = () => {
                             <p>
                                 <Link to={`/commision/${commision.id}`}>{commision.description}</Link>
                                 submitted by {commision.user?.name}
-                                , charges an hourly rate of {commision.price?.name}
+
                             </p>
                         </div>
                     }

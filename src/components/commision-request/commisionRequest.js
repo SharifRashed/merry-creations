@@ -21,6 +21,7 @@ export const CommisionRequest = () => {
         []
     )
 
+
     return (
         <>
 
@@ -33,6 +34,10 @@ export const CommisionRequest = () => {
                                 submitted by {commision.user?.name}
 
                             </p>
+
+                            <button id={commision.id} onClick={(event) => {
+                                deleteTicket(parseInt(event.target.id))
+                            }}>Delete</button>
                         </div>
                     }
                 )
@@ -40,7 +45,17 @@ export const CommisionRequest = () => {
             < div >
                 <button onClick={() => history.push("/commissionRequest/create")}>Create Commission Request</button>
             </div >
+
+
         </>
+
     )
+
+}
+
+const deleteTicket = (id) => {
+    fetch(`http://localhost:8088/CommisionRequests/${id}`, {
+        method: "DELETE"
+    })
 }
 

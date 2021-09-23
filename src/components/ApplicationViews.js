@@ -27,6 +27,12 @@ export const ApplicationViews = () => {
                 </Route>
             </>
 
+            <>
+                <Route exact path="/commissionRequest/:commisionRequestsId(\d+)">
+                    <CommisionRequest />
+                </Route>
+            </>
+
         </>
     )
 }
